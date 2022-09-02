@@ -1,7 +1,7 @@
-import requests
-import os
 from requests_oauthlib import OAuth1Session
 import json
+import requests
+import os
 
 #retrieving API Ninja key from environment using os
 API_NINJA_KEY = os.environ.get("API_NINJA_KEY")
@@ -13,7 +13,8 @@ response = requests.get(api_url, headers={'X-Api-Key': API_NINJA_KEY})
 #If response is ok, print the text
 if response.status_code == requests.codes.ok:
     fact = response.text
-    print(fact)
+    x = len(fact)
+    factpayload = fact[11:x-3]
 else:
     print("Error:", response.status_code, response.text)
 
@@ -21,14 +22,13 @@ else:
 #Twitter automation portion starts here --
 
 # API_KEY and API_SECRET
-
 consumer_key = os.environ.get("CONSUMER_KEY")
 consumer_secret = os.environ.get("CONSUMER_SECRET")
 access_token = os.environ.get("ACCESS_TOKEN")
 access_token_secret = os.environ.get("ACCESS_TOKEN_SECRET")
 
 # Adding our fact to the payload to tweet
-payload = {"text": fact}
+payload = {"text": "⚡️ "+ factpayload+"."+" #Facts #MoreYouKnow"}
 
 # Make the request to twitter
 oauth = OAuth1Session(
@@ -49,7 +49,7 @@ if response.status_code != 201:
         "Request returned an error: {} {}".format(response.status_code, response.text)
     )
 
-print("Response code: {}".format(response.status_code))
+print("Tweet success")
 
 # Saving the response as JSON
 json_response = response.json()
