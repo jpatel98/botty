@@ -23,7 +23,7 @@ Twitter keys: `CONSUMER_KEY` `CONSUMER_SECRET` `ACCESS_TOKEN` `ACCESS_TOKEN_SECR
 - ### Steps acquire the keys and tokens
     - You will be required to sign up for an api key from [api-ninja.](https://api-ninjas.com/)
     - You will need to create a [new twitter account](http://twitter.com/signup) for your bot.
-    - Before you can use the Twitter API v2, you will need a [developer account](https://developer.twitter.com/en/portal/petition/essential/basic-info). You can learn more about getting started with the Twitter API in the [getting started](https://developer.twitter.com/en/docs/getting-started) section of our documentation. 
+    - Before you can use the Twitter API v2, you will need a [developer account](https://developer.twitter.com/en/portal/petition/essential/basic-info). You can learn more about getting started with the Twitter API in the [getting started](https://developer.twitter.com/en/docs/getting-started) section of the documentation. 
 
 ## Run Locally
 
