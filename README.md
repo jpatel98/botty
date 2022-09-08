@@ -2,7 +2,7 @@
 # Botty Twitter Bot
 [Botty](https://twitter.com/factzbot) is a Twitter Bot that Tweets random facts hourly. 
 It is built using the [manage Tweets ](https://developer.twitter.com/en/docs/twitter-api/tweets/manage-tweets/introduction)endpoint in the Twitter API v2 and deployed with [Pythonanywhere](https://www.pythonanywhere.com/). 
-This bot parses random facts from an API that provides random facts facts, [api-ninjas](https://api-ninjas.com/), and Tweets them out.
+This bot parses random facts from an API that provides random facts, [api-ninjas](https://api-ninjas.com/), and Tweets them out.
 
 ## Tech Used
 
